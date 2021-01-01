@@ -1,6 +1,6 @@
 <template>
   <router-link :to="to">
-    <el-card class="box-card" shadow="hover">{{ name }}</el-card>
+    <el-card class="box-card" shadow="hover">{{ dname }}</el-card>
   </router-link>
 </template>
 
@@ -27,7 +27,7 @@ export default {
     }
   },
   setup(prop: DocumentTinyCardProps) {
-    return { pid: prop.projectId, did: prop.documentId, to: `/p/${prop.projectId}/d/${prop.documentId}` }
+    return { pid: prop.projectId, did: prop.documentId, dname: prop.documentName, to: `/p/${prop.projectId}/d/${prop.documentId}` }
   }
 }
 </script>

@@ -18,7 +18,9 @@
         </el-menu>
       </div>
     </el-col>
-    <el-col :span="20"><router-view /></el-col>
+    <el-col :span="20">
+      <suspense><router-view /> </suspense>
+    </el-col>
   </el-row>
 </template>
 
@@ -28,7 +30,7 @@ import { getCurrentProject } from '../apis/helpers'
 export default {
   setup() {
     let projectId = ref(getCurrentProject())
-    // provide('projectId', projectId)
+    provide('projectId', projectId)
     return { projectId }
   }
 }

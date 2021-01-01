@@ -6,7 +6,9 @@
           <el-menu-item index="1" route="/">Huix Trans</el-menu-item>
         </el-menu>
       </el-header>
-      <el-main><router-view /></el-main>
+      <el-main>
+        <suspense><router-view /> </suspense>
+      </el-main>
     </el-container>
   </div>
 </template>
