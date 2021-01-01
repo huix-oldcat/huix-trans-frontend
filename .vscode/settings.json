@@ -13,5 +13,7 @@
         "html",
         "vue",
         "typescript"
-    ]
+    ],
+    "editor.tabSize": 2,
+    "files.eol": "\n"
 }
