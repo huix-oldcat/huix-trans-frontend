@@ -8,9 +8,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/mockjs": "^1.0.3",
     "axios": "^0.21.1",
     "core-js": "^3.8.1",
     "element-plus": "^1.0.1-alpha.19",
+    "mockjs": "^1.1.0",
     "vue": "^3.0.4",
     "vue-router": "^4.0.1",
     "vuex": "^4.0.0-0"
