@@ -7,5 +7,11 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    }
+    },
+    "eslint.validate": [
+        "javascript",
+        "html",
+        "vue",
+        "typescript"
+    ]
 }
