@@ -23,11 +23,12 @@
 </template>
 
 <script lang="ts">
-import { ref } from 'vue'
+import { provide, ref } from 'vue'
 import { getCurrentProject } from '../apis/helpers'
 export default {
   setup() {
     let projectId = ref(getCurrentProject())
+    // provide('projectId', projectId)
     return { projectId }
   }
 }
